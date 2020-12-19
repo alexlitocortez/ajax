@@ -1,18 +1,44 @@
 
+
+html {
+    background: lightblue;
+    background-image: url(nba_logo.jpg);
+    background-size: 500px;
+}
+
+img {
+    position: relative;
+    top: -100px;
+}
+
 .search_bar {
     top: 50%;
-    left: 50%;
-    right: 50%;
-    width: 100%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
     height: 100px;
     padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     margin: auto;
     margin-bottom: 12px;
     position: relative;
     display: inline-block;
     justify-content: center;
+    z-index: 9999;
 }
 
+.search {
+    position: relative;
+    display: block;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: 80%;
+}
 
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
 
