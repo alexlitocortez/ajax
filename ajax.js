@@ -1,16 +1,27 @@
 
-var request = new XMLHttpRequest()
+const key = document.getElementById('getText');
 
-// Opening file via "GET"
-request.open('GET', 'www.balldontlie.io/api/v1/players', true)
+key.addEventListener('keyup', nextText)
 
-request.onload = function () {
-    // Accessing JSON data
-    var data = JSON.parse(this.response)
+const dogs = [];
 
-    for (var i = 0; i < data.length; i++) {
-        console.log(data[i].name + 'team' + data[i].team + ',')
-    }
+function nextText() {
+    fetch('https://dog.ceo/api/breeds/list/all')
+    // convert to JSON file (Javascript object notation)
+    .then((res) => res.json())
+    // Put the data from the API in the console
+    .then((data) => dogs.push(...data))
+}
 
-request.send()
+function findMatches(wordToMatch, dogs) {
+    return dogs.filter()
+}
+
+
+
+
+
+
+
+
 
