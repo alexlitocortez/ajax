@@ -1,24 +1,16 @@
 
-const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+var request = new XMLHttpRequest()
 
-const cities = [];
+// Opening file via "GET"
+request.open('GET', 'www.balldontlie.io/api/v1/players', true)
 
-fetch(endpoint)
-    .then(blob => blob.json())
-    .then(data => cities.push(data))
+request.onload = function () {
+    // Accessing JSON data
+    var data = JSON.parse(this.response)
 
-function findMatches(wordToMatch, cities) {
-    return cities.filter(place => {
-        const regex = new RegExp(wordToMatch, 'gi');
-        return place.city.match(regex) || place.state.match(regex)
-    });
-}
+    for (var i = 0; i < data.length; i++) {
+        console.log(data[i].name + 'team' + data[i].team + ',')
+    }
 
-function displayMatches() {
-    console.log(this.value);
-}
+request.send()
 
-const searchInput = document.querySelector('.search');
-const suggestions = document.querySelector('.suggestions');
-
-searchInput.addEventListener('change', findMatches);
