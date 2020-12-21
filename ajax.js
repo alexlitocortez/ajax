@@ -9,15 +9,18 @@ function nextText() {
     fetch('https://dog.ceo/api/breeds/list/all')
     // convert to JSON file (Javascript object notation)
     .then((res) => res.json())
-    // Put the data from the API in the console
-    .then((data) => dogs.push(...data))
+    .then(data => console.log(data))
+    .then(data => dogs.push(...data))
 }
 
 function findMatches(wordToMatch, dogs) {
-    return dogs.filter()
+    return dogs.filter(dog => {
+        const regex = new RegExp(wordToMatch, 'gi');
+        return dog.match(regex);
+    });
 }
 
-
+function 
 
 
 
