@@ -1,25 +1,37 @@
 
 
 html {
-    background: lightblue;
-    background-image: url(nba_logo.jpg);
+    background: white;
     background-size: 500px;
 }
 
-img {
-    position: relative;
-    top: -100px;
+.images {
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    width: 100px;
+}
+
+#dogs_1 {
+    width: 300px;
+}
+
+#dogs_3 {
+    width: 300px;
 }
 
 .search_bar {
-    top: 50%;
+    top: 80%;
     left: 25%;
     right: 25%;
     width: 50%;
     height: 100px;
     padding: 12px 20px 12px 40px;
     border: 1px solid black;
-    margin: auto;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 12px;
     position: relative;
     display: inline-block;
