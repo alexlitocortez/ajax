@@ -5,6 +5,16 @@ html {
     background-size: 500px;
 }
 
+button {
+    color: lightblue;
+    padding: 20px;
+    width: 30px;
+}
+
+h4 {
+    text-align: center;
+}
+
 .images {
     display: flex;
     position: absolute;
@@ -21,40 +31,3 @@ html {
     width: 300px;
 }
 
-.search_bar {
-    top: 80%;
-    left: 25%;
-    right: 25%;
-    width: 50%;
-    height: 100px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid black;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 12px;
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-    z-index: 9999;
-}
-
-.search {
-    position: relative;
-    display: block;
-    top: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 30px;
-    width: 80%;
-}
-
-@keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-li {
-    justify-content: center;
-    list-style: none;
-}
