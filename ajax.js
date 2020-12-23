@@ -1,22 +1,17 @@
 
-const endpoint = 'https://dog.ceo/api/breeds/list/all';
-const key = document.getElementById('getText');
-const suggestions = document.querySelector('.suggestions');
-const dogs = [];
+const endpoint = 'https://dog.ceo/api/breeds/image/random';
+const container = document.querySelector('image_content');
+const dogs = document.querySelector('button');
 
 
-fetch(endpoint)
-// convert to JSON file (Javascript object notation)
-.then(blob => blob.json())
-// Pushing data from API into an array
-.then(data => dogs.push(data));
-// Printing to console to see if "dogs" turned into an array
-console.log(dogs);
 
-function findMatches(wordToMatch, dogs) {
-    // filters the array into subsets
-    return dogs.filter(place => )
+function randomImg() {
+    dogs.addEventListener('click', function(e) {
+        e.preventDefault();
+        var images = document.getElementById('image_content');
+        images.src = "https://dog.ceo/api/breeds/image/random">
+        console.log(randomImg());
+    });
 }
-
 
 
