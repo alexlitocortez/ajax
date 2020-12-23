@@ -5,14 +5,9 @@ html {
     background-size: 500px;
 }
 
-button {
-    color: lightblue;
-    padding: 20px;
-    width: 30px;
-}
-
 h4 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .images {
@@ -21,6 +16,28 @@ h4 {
     top: 300px;
     left: 350px;
     width: 100px;
+    margin-top: 200px;
+}
+
+#dogs {
+    width: 70px;
+    height: 60px;
+    border: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    box-shadow: 1px 2px;
+    position: relative;
+    top: 150px;
+    left: 670px;
+    cursor: pointer;
+    transition: 0.2s all;
+    background-color: lightblue;
+}
+
+#dogs:active {
+    transform: scale(0.98);
 }
 
 #dogs_1 {
@@ -31,3 +48,6 @@ h4 {
     width: 300px;
 }
 
+
+
+          
