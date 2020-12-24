@@ -19,9 +19,19 @@ h4 {
     margin-top: 200px;
 }
 
+.image_content {
+    position: relative;
+    top: 150px;
+    left: 350px;
+    width: 1000px;
+    height: 1000px;
+}
+
 #dogs {
-    width: 70px;
-    height: 60px;
+    width: 150px;
+    height: 80px;
+    padding: 15px 32px;
+    text-align: center;
     border: none;
     display: inline-block;
     margin-left: auto;
@@ -32,12 +42,16 @@ h4 {
     top: 150px;
     left: 670px;
     cursor: pointer;
-    transition: 0.2s all;
-    background-color: lightblue;
+    transition-duration: 0.4s;
+    background-color: #4169e1;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
-#dogs:active {
-    transform: scale(0.98);
+#dogs:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 }
 
 #dogs_1 {
@@ -48,6 +62,10 @@ h4 {
     width: 300px;
 }
 
+#img_content {
+    position: relative;
+    top: 300px;
+    width: 1000px;
+    height: 1000px;
+}
 
-
-          
