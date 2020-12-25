@@ -19,6 +19,7 @@ h4 {
     margin-top: 200px;
 }
 
+<<<<<<< HEAD
 .dog-img {
     width: 300px;
     height: 300px;
@@ -35,6 +36,17 @@ h4 {
 }
 
 #unsplash {
+=======
+.image_content {
+    position: relative;
+    top: 150px;
+    left: 350px;
+    width: 1000px;
+    height: 1000px;
+}
+
+#dogs {
+>>>>>>> 52ac901ac4ec9356a4f4da66c0eb81024970637b
     width: 150px;
     height: 80px;
     padding: 15px 32px;
@@ -69,3 +81,13 @@ h4 {
     width: 300px;
 }
 
+<<<<<<< HEAD
+=======
+#img_content {
+    position: relative;
+    top: 300px;
+    width: 1000px;
+    height: 1000px;
+}
+
+>>>>>>> 52ac901ac4ec9356a4f4da66c0eb81024970637b
