@@ -1,4 +1,7 @@
 
+* {
+    box-sizing: border-box;
+}
 
 html {
     background: white;
@@ -19,7 +22,6 @@ h4 {
     margin-top: 200px;
 }
 
-<<<<<<< HEAD
 .dog-img {
     width: 300px;
     height: 300px;
@@ -36,58 +38,20 @@ h4 {
 }
 
 #unsplash {
-=======
-.image_content {
     position: relative;
     top: 150px;
-    left: 350px;
-    width: 1000px;
-    height: 1000px;
-}
-
-#dogs {
->>>>>>> 52ac901ac4ec9356a4f4da66c0eb81024970637b
-    width: 150px;
-    height: 80px;
+    left: 40%;
+    border: none;
+    color: white;
     padding: 15px 32px;
     text-align: center;
-    border: none;
+    text-decoration: none;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    outline: none;
-    box-shadow: 1px 2px;
-    position: relative;
-    top: 150px;
-    left: 670px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    background-color: #4169e1;
-    color: white;
     font-size: 16px;
-    border-radius: 10px;
+    background-color: royalblue;
 }
 
-#dogs:hover {
-    transform: scale(1.1);
-    transition-duration: 0.2s;
+#unsplash:hover {
+    padding: 20px 60px;
 }
 
-#dogs_1 {
-    width: 300px;
-}
-
-#dogs_3 {
-    width: 300px;
-}
-
-<<<<<<< HEAD
-=======
-#img_content {
-    position: relative;
-    top: 300px;
-    width: 1000px;
-    height: 1000px;
-}
-
->>>>>>> 52ac901ac4ec9356a4f4da66c0eb81024970637b
