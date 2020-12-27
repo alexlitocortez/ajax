@@ -1,21 +1,27 @@
-const endpoint = 'https://api.unsplash.com/search/photos?query=dogs&client_id=sRf3a4tonFVZXP-ZR3Fz8dWoBECKIx5GT5cb3SbVo5A';
 const dogimg = document.getElementById('image_content');
 const dogs = document.getElementById('unsplash');
 
 
-dogs.addEventListener('click', getImages);
-
-async function getImages(image) {
-    fetch(endpoint)
-        .then(response => {
-            response.json();
-        })
-        .then(data => {
-        console.log(data) //Prints results from response.json()` in getRequest
-        
-    })
+async function getRandomDog() {
+    let url = "https://dog.ceo/api/breeds/image/random"
+    try {
+        let res = await fetch(url)
+        return await res.json();
+    }
+    catch(error) {
+        console.log(error);
+    }
 }
+async function renderDogs() {
+    let dogs = await getRandomDog();
+    var dog = [];
+    dog = new Image(); // Create image object
+    dog.src = dogs.message;
+    dog.width = "600";
+    dog.height = "600";
 
+    document.dogimg.appendChild(dog);
+}
 // Find a way to insert API images and input into HTML
 
 
