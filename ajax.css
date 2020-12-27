@@ -3,9 +3,16 @@
     box-sizing: border-box;
 }
 
-html {
-    background: white;
-    background-size: 500px;
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: gradient 15s ease infinite;
 }
 
 h4 {
@@ -42,16 +49,20 @@ h4 {
     top: 150px;
     left: 40%;
     border: none;
-    color: white;
+    border-radius: 10px;
+    color: purple;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    transition: .2s ease-in-out;
     display: inline-block;
     font-size: 16px;
-    background-color: royalblue;
+    background-color: #ffcba4;
 }
 
 #unsplash:hover {
-    padding: 20px 60px;
+    padding: 30px 60px;
+    transform: translateY(0);
 }
+
 
