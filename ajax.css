@@ -20,15 +20,6 @@ h4 {
     margin-bottom: 10px;
 }
 
-.images {
-    display: flex;
-    position: absolute;
-    top: 300px;
-    left: 350px;
-    width: 100px;
-    margin-top: 200px;
-}
-
 .dog-img {
     width: 300px;
     height: 300px;
@@ -39,8 +30,8 @@ h4 {
     position: relative;
     top: 200px;
     left: 500px;
-    width: 500px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
     border-radius: 15px;
     background-color: #000080;
     margin: 0;
@@ -53,26 +44,26 @@ h4 {
 
 .container {
     background-color: #fff;
-    margin: 10px;
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 300px;
     border-radius: 15px;
+    
 }
 
 #unsplash {
     position: relative;
-    top: 0px;
-    left: 60px;
+    top: 40px;
+    left: 30px;
     border: none;
     border-radius: 10px;
-    color: purple;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     transition: .2s ease-in-out;
     display: inline-block;
     font-size: 16px;
-    background-color: #ffcba4;
+    background-color: #000080;
     outline: none;
     cursor: pointer;
 }
@@ -81,5 +72,14 @@ h4 {
     padding: 30px 40px;
     transform: translateY(0);
 }
+
+#container {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 
 
