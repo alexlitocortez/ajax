@@ -75,42 +75,37 @@ h4 {
     width: 100%;
 }
 
-
-/* For iPhone */
-@media screen and (max-width: 375px) {
-    #image_content {
-        margin: auto;
-        width: 60%;
-        border: 5px solid #ffff00;
-        padding: 10px;
-    }
-
-    body {
-        background-color: white;
-    }
-}
-
-/* For other mobile */
-@media screen and (max-width: 480px) {
-
-}
-
 /* For iPad */
 @media only screen and (max-width: 768px) {
     .image_content {
         margin: 0;
         width: 60%;
+        height: 50%;
         padding: 10px;
         position: relative;
-        left: 200px;
+        left: 150px;
         top: 50px;
+    }
+
+    button {
+        position: relative;
+        left: 100px;
+    }
+
+    body {
+        background: linear-gradient(-100deg, #23a6d5, #23d5ab);
     }
 }
 
 
-
-
-
-
-
-
+/* For iPhone */
+@media only screen and (min-width: 375px) {
+    .image_content {
+        margin: auto;
+        width: 60%;
+        height: 50%;
+        padding: 10px;
+        position: relative;
+        left: 25px;
+    }
+}
