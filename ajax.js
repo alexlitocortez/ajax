@@ -9,20 +9,19 @@ function fetchDogImage() {
     fetch('https://dog.ceo/api/breeds/image/random')
         .then(res => res.json())
         .then(data => {
-            container.innerHTML = `<img src="${data.message}" width="400" height="400"/>`;
-        })
-        // Create a media condition that targets viewports at least 768px wide
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
-        const mediaQueryTwo = window.matchMedia('(max-width: 1400px)');
-        
-        if (mediaQuery.matches) {
-            container.innerHTML = `<img src="${data.message}" width="408" height="197"/>`;
-        } else if (mediaQueryTwo.matches) {
-            container.innerHTML = `<img src="${data.message}" width="820" height="197"/>`;
-        }
-    };
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+            const mediaQueryTwo = window.matchMedia('(max-width: 1400px)');
+            if (mediaQuery.matches) {
+                container.innerHTML = `<img src="${data.message}" width="408" height="197"/>`;
+            } else (mediaQueryTwo.matches) {
+                container.innerHTML = `<img src="${data.message}" width="820" height="197"/>`;
+            };
+    });
 
-// width="820" height="197"
+
+
+
+
 
 
 
