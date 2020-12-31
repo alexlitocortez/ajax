@@ -75,6 +75,23 @@ h4 {
     width: 100%;
 }
 
+/* Media Queries */
+
+
+/* For tablet */
+@media only screen and (max-width: 1024px) {
+    .image_content {
+        width: 60%;
+        height: 50%;
+        padding: 10px;
+    }
+
+    #unsplash {
+        position: relative;
+        left: 100px;
+    }
+}
+
 /* For iPad */
 @media only screen and (max-width: 768px) {
     .image_content {
@@ -97,15 +114,20 @@ h4 {
     }
 }
 
-
 /* For iPhone */
-@media only screen and (min-width: 375px) {
+@media only screen 
+    and (min-width: 375px) {
     .image_content {
         margin: auto;
         width: 60%;
         height: 50%;
         padding: 10px;
         position: relative;
-        left: 25px;
+        left: 5px;
+    }
+
+    #unsplash {
+        position: relative;
+        left: 5px;
     }
 }
