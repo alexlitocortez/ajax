@@ -27,6 +27,8 @@ h4 {
 .image_content {
     border-radius: 15px;
     background-color: #000080;
+    height: 50%;
+    width: 50%;
     margin: 0;
     padding: 20px;
     justify-content: center;
@@ -55,12 +57,13 @@ h4 {
     background-color: #000080;
     outline: none;
     cursor: pointer;
-    transition-timing-function: 0.2s;
+    transition: .3s ease;
 }
 
 #unsplash:hover {
-    opacity: 0.5;
-    transition-duration: 0.2s;
+    opacity: 0.6;
+    padding: 1em;
+    transform: scale(1.2);
 }
 
 #container {
@@ -75,7 +78,7 @@ h4 {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .image_content {
         margin: auto;
-        width: 10em;
+        width: 50%;
         height: 50%;
         padding: 10px;
         position: relative;
@@ -86,6 +89,7 @@ h4 {
     #unsplash {
         width: 10em;
         position: relative;
+        top: 4em;
         left: 0.2em;
         padding: 0.7em;
     }
@@ -116,7 +120,7 @@ h4 {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .image_content {
         margin: auto;
-        height: 40%;
+        height: 50%;
         width: 50%;
         position: relative;
         top: 25%;
@@ -124,34 +128,59 @@ h4 {
     }
     #unsplash {
         position: relative;
-        top: 3em;
+        top: 4em;
         left: 6em;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .image_content {
+        margin: auto;
+        height: 50%;
+        width: 50%;
+        position: relative;
+        top: 25%;
+    }
 
+    #unsplash {
+        position: relative;
+        top: 4em;
+        left: 9em;
+    }
 }
 
 /* For Desktop */
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
     .image_content {
-        width: 60%;
+        margin: auto;
+        width: 50%;
         height: 50%;
-        padding: 10px;
         position: relative;
-        top: 50%;
+        top: 25%;
     }
 
     #unsplash {
         position: relative;
-        left: 100px;
+        top: 4em;
+        left: 13em;
     }
 }
 
+@media only screen and (min-width: 1401px) and (min-width: 4500px) {
+    .image_content {
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 25%;
+    }
 
-/* For iPad */
-
+    #unsplash {
+        position: relative;
+        top: 4em;
+        left: 60em;
+    }
+}
 
 
